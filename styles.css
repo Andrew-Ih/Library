@@ -1,0 +1,57 @@
+
+
+body {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    display: grid;
+    grid-template: max(100vh,865px) / max(25vw,378px) max(75vw,1134px);
+    margin: 0;
+}
+
+.sidebar {
+    background-color: #DCD2CC;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.dashboard-svg { 
+    height: max(6vh, 52px);
+    width: max(6vw, 91px);
+}
+
+.main {
+    background-color: white;
+    display: grid;
+    grid-template: 10% 90% / 100%;
+}
+
+.header {
+    background-color: rgb(220, 217, 217);
+    box-shadow: 5px 5px 10px 0px #ced3da;
+    z-index: 1; 
+    display: grid;
+    grid-template: 100% / 80% 20%;
+    align-items: center;
+}
+
+.library-title {
+    /* font-weight: bold; */
+    font-size: 30px;
+    display: flex;
+    padding-left: 50px;
+}
+
+button {
+    width: 60%;
+    height: 50%;
+    background-color: #85D2D0;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.books-container {
+    background-color: white;
+}
+
