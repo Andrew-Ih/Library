@@ -96,6 +96,68 @@ button {
     background-color: red;
 }
 
+dialog {
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(185, 183, 189, 0.9); 
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.form {
+    /* display: grid;
+    grid-template: 20% 60% 20% / 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.form-heading {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+} 
+
+.form-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formID {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formID label {
+    font-size: 20px;
+}
+
+.formID input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.submit {
+    width: 120px;
+    height: 50px;
+    border-radius:20px;
+} 
+
 
 
 

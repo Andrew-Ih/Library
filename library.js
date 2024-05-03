@@ -1,3 +1,7 @@
+const modal = document.querySelector("dialog");
+const addBook = document.querySelector(".add-book");
+const submit = document.querySelector(".submit");
+
 const myLibrary = [];
 
 function Book(title, author, pages, read) {
@@ -49,25 +53,28 @@ function displayBook() {
     });
 }
 
-  addBookToLibrary('The Great Gatsby', 'F. Scott Fitzgerald', 180, true);
-  addBookToLibrary('To Kill a Mockingbird', 'Harper Lee', 281, false);
-  addBookToLibrary('1984', 'George Orwell', 328, true);
+addBookToLibrary('The Great Gatsby', 'F. Scott Fitzgerald', 180, true);
+addBookToLibrary('To Kill a Mockingbird', 'Harper Lee', 281, false);
+addBookToLibrary('1984', 'George Orwell', 328, true);
  
-  // Display initial books
-  displayBook();
 
-
-const addBook = document.querySelector(".add-book");
 addBook.addEventListener("click", () => {
-    alert("Book added");
+    modal.showModal();
 });
 
-const readButton = document.querySelectorAll(".read");
-readButton.addEventListener("click", () => {
-    alert("Book added");
+
+submit.addEventListener("click", () => {
+    modal.close();
 });
 
-const remove = document.querySelectorAll(".remove");
-remove.addEventListener("click", () => {
-    alert("Book added");
-});
+// const readButton = document.querySelectorAll(".read");
+// readButton.addEventListener("click", () => {
+//     alert("Book added");
+// });
+
+// const remove = document.querySelectorAll(".remove");
+// remove.addEventListener("click", () => {
+//     alert("Book added");
+// });
+
+displayBook();
