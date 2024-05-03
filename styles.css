@@ -3,11 +3,11 @@
 body {
     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
     display: grid;
-    grid-template: max(100vh,865px) / max(25vw,378px) max(75vw,1134px);
+    grid-template: max(100vh,865px) / max(100vw,1512px);
     margin: 0;
 }
 
-.sidebar {
+/* .sidebar {
     background-color: #DCD2CC;
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -15,7 +15,7 @@ body {
 .dashboard-svg { 
     height: max(6vh, 52px);
     width: max(6vw, 91px);
-}
+} */
 
 .main {
     background-color: white;
@@ -53,5 +53,49 @@ button {
 
 .books-container {
     background-color: white;
+    display: grid;
+    grid-template: 50% 50% / repeat(5, 20%);
+    align-items: center;
+    padding-left: 50px;
 }
+
+.book {
+    background-color: #DBE8D8;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 8px solid burlywood;
+    box-shadow: 5px 5px 10px 0px #ced3da;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.author {
+    font-size: 17px;
+}
+
+.pages {
+    font-size: 17px;
+}
+
+.book .read {
+    background-color: green;
+    border: 2px solid black;
+    width: 100px;
+}
+
+.book .remove {
+    width: 100px;
+    border: 2px solid black;
+    background-color: red;
+}
+
+
+
 
